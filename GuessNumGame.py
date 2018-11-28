@@ -2,26 +2,25 @@ import random
 def game(): 
         generatedNum=random.randint(1,20)
         for numGuesses in range(1,7):
-                print('enter number')
-                innum=input()
-                if int(innum) <generatedNum:
+                print('Enter a number')
+                enteredNum=input()
+                if int(enteredNum) <generatedNum:
                         print('too small')
 
-                elif int(innum)>generatedNum:
+                elif int(enteredNum)>generatedNum:
                         print('too big')
 
                 else:
                         break
 
-        if int(innum)==generatedNum:
-                print('you win')
+        if int(enteredNum)==generatedNum:
+                print('You win !!!!')
         else:
-                print('you lost, the number was' + str(generatedNum))		
+                print('You lost, the number was' + str(generatedNum))		
 
 while True:
-        print('want to play ? y/n')
+        print('Want to play ? y/n')
         answer=input()
-
         if answer =='y':
                 game()
         else:
