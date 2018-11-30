@@ -1,3 +1,5 @@
+# Simple number game, player should guess a randomised number between 1 and 20 in 6 or less steps 
+
 import random
 def game(): 
         generatedNum=random.randint(1,20)
