@@ -1,3 +1,7 @@
+# A program that returns a list that contains only the elements that are common between the lists (without duplicates). 
+# Program works on two lists of different sizes generated randomly.
+
+
 import random
 c=[]
 a=random.sample(range(1, 11), 10)
