@@ -1,0 +1,19 @@
+#Check Primality of a number
+num = int(input())
+prime= False
+list = list(range(2,num))
+
+if (num==1):
+        prime= True
+        
+for i in list:
+        if (num%i)==0:
+                prime= False
+                break;
+        else :
+                prime = True
+
+if (prime==True):
+        print(num, "is primal")
+else:
+        print(num, "is not primal")
