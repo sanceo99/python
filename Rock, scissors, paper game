@@ -4,14 +4,19 @@ import random
 rps = ['rock','scissors','paper']
 while True:
         bot = rps[random.randrange(len(rps))]
-        print('rock,scissors,paper')
+        print('rock,scissors,paper,exit')
         player=input()
-        print("I choose ", bot)
-        if (player==bot):
-                print('It\'s a Draw')
-        elif(((player=='scissors')and(bot=='paper'))or((player=='rock')&(bot=='scissors'))or((player=='paper')and(bot=='rock'))):
-                print('You Win')
+        if (player!='exit'):
+                print("I choose ", bot)
+                if (player==bot):
+                        print('It\'s a Draw')
+
+                elif(((player=='scissors')and(bot=='paper'))or((player=='rock')&(bot=='scissors'))or((player=='paper')and(bot=='rock'))):
+                        print('You Win')
+                else:
+                        print('You Loose')
         else:
-                print('You Loose')
+                print('Bye bye')
+                break;
 
 
